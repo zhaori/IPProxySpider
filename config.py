@@ -2,6 +2,7 @@
 
 DB_config = {
     # 'db_type': 'mongodb',
+    # 'db_type': 'sqlite'
     'db_type': 'mysql',
 
     'mysql': {
