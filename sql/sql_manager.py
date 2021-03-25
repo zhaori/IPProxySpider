@@ -16,7 +16,8 @@ class SqlManager(object):
         elif db_type == 'redis':
             pass
         elif db_type == 'sqlite':
-            pass
+            from sql.sqlite import SQLite
+            self.sql = SQLite(config.DB_config.get('sqlite').get('db'))
         elif db_type == 'mongodb':
             from sql.mongodb import Mongodb
             self.sql = Mongodb(**db_config)

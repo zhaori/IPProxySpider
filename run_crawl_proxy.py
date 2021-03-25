@@ -20,6 +20,7 @@ from crawler.spiders.proxy.freeproxylists import FreeProxyListsSpider
 from crawler.spiders.proxy.usproxy import UsProxySpider
 from crawler.spiders.proxy.proxydb import ProxyDBSpider
 from crawler.spiders.proxy.data5u import Data5uSpider
+from crawler.spiders.proxy.ipjiangxianli import IPJiangXianLiSpider
 
 
 scrapydo.setup()
@@ -50,6 +51,7 @@ if __name__ == '__main__':
         UsProxySpider,
         ProxyDBSpider,
         Data5uSpider,
+        IPJiangXianLiSpider
     ]
     while True:
         utils.log('*******************run spider start...*******************')
